@@ -1,18 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benvenuti</title>
+    <title>Federico Sansoni - Dermatologist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
-    <h1>Ciao, mondo!</h1>
-    <p>Bsjndfkjsnfkjnsdkjfskjdfksdnfkdj</p>
-</body>
 
-    <meta name="robots" content="index, follow">
-<meta name="description" content="Descrizione breve del tuo sito">
-<meta name="keywords" content="parole chiave, github pages, sito personale">
-<meta name="author" content="Il tuo nome">
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Federico Sansoni</h1>
+            <p id="header-title">Dermatologo / Dermatologist</p>
+            <nav>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul id="nav-list">
+                    <li><a href="#about" id="nav-about">About</a></li>
+                    <li><a href="#services" id="nav-services">Services</a></li>
+                    <li><a href="#contact" id="nav-contact">Contact</a></li>
+                    <li><a href="#appointment" id="nav-appointment">Book Appointment</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn" onclick="toggleLanguage()"><i
+                                class="fas fa-globe"></i></a>
+                    </li>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 id="about-title">About Me</h2>
+            <p id="about-desc-en">I am Federico Sansoni, a certified dermatologist with years of experience in the
+                treatment of skin conditions.</p>
+            <p id="about-desc-it" style="display:none;">Mi chiamo Federico Sansoni, dermatologo certificato con anni di
+                esperienza nel trattamento di patologie cutanee.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2 id="services-title">Services</h2>
+            <p id="services-desc-en">Here are the services I offer:</p>
+            <p id="services-desc-it" style="display:none;">Servizi che offro:</p>
+            <ul id="services-list-en">
+                <li>Skin Cancer Screening</li>
+                <li>Acne Treatment</li>
+                <li>Psoriasis and Eczema Management</li>
+                <li>Laser Treatments</li>
+                <li>Hair Loss Treatment</li>
+            </ul>
+            <ul id="services-list-it" style="display:none;">
+                <li>Screening per il Cancro della Pelle</li>
+                <li>Trattamento dell'Acne</li>
+                <li>Gestione di Psoriasi ed Eczema</li>
+                <li>Trattamenti Laser</li>
+                <li>Trattamento per la Caduta dei Capelli</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 id="contact-title">Contact Me</h2>
+            <p id="contact-desc-en">If you have any questions, feel free to reach out!</p>
+            <p id="contact-desc-it" style="display:none;">Se hai domande, non esitare a contattarmi!</p>
+            <form action="mailto:federico.sansoni@example.com" method="POST" enctype="text/plain">
+                <label for="name" id="label-name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email" id="label-email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message" id="label-message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" id="submit-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="appointment">
+        <div class="container">
+            <h2 id="appointment-title">Book an Appointment</h2>
+            <p id="appointment-desc-en">Click the button below to schedule an appointment with me.</p>
+            <p id="appointment-desc-it" style="display:none;">Clicca il pulsante qui sotto per fissare un appuntamento
+                con me.</p>
+            <a href="https://calendar-link.com" target="_blank" class="button" id="appointment-button">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Federico Sansoni - All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navList = document.getElementById('nav-list');
+            navList.classList.toggle('active');
+        }
+
+        function toggleLanguage() {
+            const currentLang = document.documentElement.lang;
+            const newLang = currentLang === "en" ? "it" : "en";
+
+            document.documentElement.lang = newLang;
+
+            // Header
+            document.getElementById('header-title').innerText = newLang === "en" ? 'Dermatologist' : 'Dermatologo';
+
+            // Navigation
+            document.getElementById('nav-about').innerText = newLang === "en" ? 'About' : 'Chi Sono';
+            document.getElementById('nav-services').innerText = newLang === "en" ? 'Services' : 'Servizi';
+            document.getElementById('nav-contact').innerText = newLang === "en" ? 'Contact' : 'Contatti';
+            document.getElementById('nav-appointment').innerText = newLang === "en" ? 'Book Appointment' : 'Prenota Appuntamento';
+
+            // About Section
+            document.getElementById('about-title').innerText = newLang === "en" ? 'About Me' : 'Chi Sono';
+            document.getElementById('about-desc-en').style.display = newLang === "en" ? 'block' : 'none';
+            document.getElementById('about-desc-it').style.display = newLang === "it" ? 'block' : 'none';
+
+            // Services Section
+            document.getElementById('services-title').innerText = newLang === "en" ? 'Services' : 'Servizi';
+            document.getElementById('services-desc-en').style.display = newLang === "en" ? 'block' : 'none';
+            document.getElementById('services-desc-it').style.display = newLang === "it" ? 'block' : 'none';
+            document.getElementById('services-list-en').style.display = newLang === "en" ? 'block' : 'none';
+            document.getElementById('services-list-it').style.display = newLang === "it" ? 'block' : 'none';
+
+            // Contact Section
+            document.getElementById('contact-title').innerText = newLang === "en" ? 'Contact Me' : 'Contatti';
+            document.getElementById('contact-desc-en').style.display = newLang === "en" ? 'block' : 'none';
+            document.getElementById('contact-desc-it').style.display = newLang === "it" ? 'block' : 'none';
+            document.getElementById('label-name').innerText = newLang === "en" ? 'Name' : 'Nome';
+            document.getElementById('label-email').innerText = newLang === "en" ? 'Email' : 'Email';
+            document.getElementById('label-message').innerText = newLang === "en" ? 'Message' : 'Messaggio';
+            document.getElementById('submit-button').innerText = newLang === "en" ? 'Send Message' : 'Invia Messaggio';
+
+            // Appointment Section
+            document.getElementById('appointment-title').innerText = newLang === "en" ? 'Book an Appointment' : 'Prenota un Appuntamento';
+            document.getElementById('appointment-desc-en').style.display = newLang === "en" ? 'block' : 'none';
+            document.getElementById('appointment-desc-it').style.display = newLang === "it" ? 'block' : 'none';
+            document.getElementById('appointment-button').innerText = newLang === "en" ? 'Book Now' : 'Prenota Ora';
+        }
+    </script>
+</body>
 
 </html>
