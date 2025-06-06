@@ -16,11 +16,12 @@ body {
   width: 80%;
   margin: 0 auto;
   max-width: 1200px;
+  min-width: 320px;
 }
 
 /* Header */
 header {
-  background-color: #555;
+  background-color: #444; /* Contrasto migliorato */
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -156,12 +157,19 @@ footer {
   color: white;
   text-align: center;
   padding: 10px 0;
-  position: fixed;
+  position: relative; /* Cambiato da fixed a relative */
   width: 100%;
   bottom: 0;
 }
 
-/* Media Queries */
+/* Accessibility: focus outline */
+a:focus,
+button:focus {
+  outline: 3px solid #555;
+  outline-offset: 2px;
+}
+
+/* Responsive Menu */
 @media (max-width: 768px) {
   .container {
     width: 90%;
@@ -213,4 +221,11 @@ footer {
   h2 {
     font-size: 20px;
   }
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
