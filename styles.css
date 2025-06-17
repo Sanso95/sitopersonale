@@ -32,6 +32,22 @@ header h1 {
   margin-bottom: 10px;
 }
 
+ol {
+  padding-left: 1.5em; /* o 0, se vuoi rimuovere il rientro completamente */
+  margin-left: 0;
+  text-align: left;
+  list-style-position: outside;
+}
+
+ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 1.5em;
+  margin-left: 0;
+  text-align: left;
+}
+
+}
 header nav {
   position: relative;
 }
@@ -105,15 +121,6 @@ h2 {
   margin-bottom: 20px;
   font-size: 28px;
   color: #333;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul li {
-  margin: 10px 0;
 }
 
 #patologie ul {
