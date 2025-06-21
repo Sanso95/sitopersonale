@@ -33,7 +33,7 @@ header h1 {
 }
 
 /* Ensure the homepage link inherits the header color */
-header h1 a {
+a {
   color: white;
   text-decoration: none;
 }
