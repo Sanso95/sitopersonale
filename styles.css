@@ -32,6 +32,12 @@ header h1 {
   margin-bottom: 10px;
 }
 
+/* Ensure the homepage link inherits the header color */
+header h1 a {
+  color: white;
+  text-decoration: none;
+}
+
 ol {
   padding-left: 1.5em; /* o 0, se vuoi rimuovere il rientro completamente */
   margin-left: 0;
