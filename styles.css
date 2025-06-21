@@ -33,17 +33,17 @@ header h1 {
 }
 
 /* Ensure the homepage link inherits the header color */
-a {
+header h1 a {
   color: white;
   text-decoration: none;
 }
 
-a:hover {
+header h1 a:hover {
   color: white;
   text-decoration: none;
 }
 
-a:visited {
+header h1 a:visited {
   color: white;
   text-decoration: none;
 }
