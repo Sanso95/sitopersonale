@@ -1,44 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sanso95.github.io/sitopersonale/</loc>
-    <lastmod>2025-06-06T11:06:05+00:00</lastmod>
+    <lastmod>2026-06-14</lastmod>
   </url>
   <url>
     <loc>https://sanso95.github.io/sitopersonale/acne.html</loc>
+    <lastmod>2026-06-14</lastmod>
   </url>
   <url>
     <loc>https://sanso95.github.io/sitopersonale/dermatite-atopica.html</loc>
+    <lastmod>2026-06-14</lastmod>
   </url>
   <url>
     <loc>https://sanso95.github.io/sitopersonale/psoriasi.html</loc>
+    <lastmod>2026-06-14</lastmod>
   </url>
   <url>
     <loc>https://sanso95.github.io/sitopersonale/vitiligine.html</loc>
+    <lastmod>2026-06-14</lastmod>
   </url>
   <url>
     <loc>https://sanso95.github.io/sitopersonale/melanoma.html</loc>
+    <lastmod>2026-06-14</lastmod>
   </url>
   <url>
     <loc>https://sanso95.github.io/sitopersonale/micosi-cutanee.html</loc>
+    <lastmod>2026-06-14</lastmod>
   </url>
   <url>
     <loc>https://sanso95.github.io/sitopersonale/verruche.html</loc>
+    <lastmod>2026-06-14</lastmod>
   </url>
   <url>
     <loc>https://sanso95.github.io/sitopersonale/rosacea.html</loc>
+    <lastmod>2026-06-14</lastmod>
   </url>
   <url>
     <loc>https://sanso95.github.io/sitopersonale/herpes.html</loc>
+    <lastmod>2026-06-14</lastmod>
   </url>
   <url>
     <loc>https://sanso95.github.io/sitopersonale/alopecia-areata.html</loc>
+    <lastmod>2026-06-14</lastmod>
   </url>
-
-
 </urlset>
