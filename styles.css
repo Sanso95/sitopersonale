@@ -253,6 +253,7 @@ button:focus {
 
 /* Responsive images */
 img {
+  max-width: 70%;
   max-width: 40%;
   max-height: 40%;
   height: auto;
